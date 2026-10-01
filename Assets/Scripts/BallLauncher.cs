@@ -3,10 +3,6 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 public class BallLauncher : MonoBehaviour
 {
-    public float launchPower = 12f;
+    // AIに依頼して、ゲーム開始時にボールを発射する処理を追加します。
+}
 
-    void Start()
-    {
-        Rigidbody rb = GetComponent<Rigidbody>();
-        rb.AddForce(transform.forward * launchPower, ForceMode.Impulse);
-    }
